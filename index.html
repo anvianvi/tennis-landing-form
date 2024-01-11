@@ -17,26 +17,45 @@
   <body class="body">
     <main class="main">
       <h1>רוצים להיות אלופים?</h1>
-      <div class="content-container"></div>
-      <div class="left-side"></div>
-      <div class="right-side"></div>
+      <div class="content-container">
+        <div class="left-side">
+          <h3 class="h3">מתנה</h3>
+          <span class="gift-line-1">לכל נרשם/ת!</span>
+          <span class="gift-line-2">מחבט + תיק + חולצה</span>
+          <span class="gift-line-3">*המבצע עד גמר המלאי</span>
 
-      <form id="crmForm" method="post">
-        <label for="name">שם:</label>
-        <input type="text" id="name" name="name" required />
+          <form id="crmForm" method="post" class="application-form">
+            <span>מספר המקומות מוגבל, הקדימו והירשמן:</span>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="off"
+              placeholder="שם:"
+            />
 
-        <label for="phone">טלפון:</label>
-        <input type="tel" id="phone" name="phone" required />
+            <label for="phone">טלפון:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="off"
+            />
 
-        <label for="selection">בחר:</label>
-        <select id="selection" name="selection" required>
-          <option value="option1">אופציה 1</option>
-          <option value="option2">אופציה 2</option>
-          <option value="option3">אופציה 3</option>
-        </select>
+            <label for="selection">בחר:</label>
+            <select id="selection" name="selection" required autocomplete="off">
+              <option value="option1">אופציה 1</option>
+              <option value="option2">אופציה 2</option>
+              <option value="option3">אופציה 3</option>
+            </select>
 
-        <button type="submit">שלח</button>
-      </form>
+            <button type="submit">שלח</button>
+          </form>
+        </div>
+        <div class="right-side"></div>
+      </div>
     </main>
     <footer class="footer"></footer>
     <script src="./script.js"></script>
