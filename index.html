@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body">
+    <main class="main">
+      <h1>רוצים להיות אלופים?</h1>
+      <div class="content-container"></div>
+      <div class="left-side"></div>
+      <div class="right-side"></div>
+
+      <form id="crmForm" method="post">
+        <label for="name">שם:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">טלפון:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="selection">בחר:</label>
+        <select id="selection" name="selection" required>
+          <option value="option1">אופציה 1</option>
+          <option value="option2">אופציה 2</option>
+          <option value="option3">אופציה 3</option>
+        </select>
+
+        <button type="submit">שלח</button>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
