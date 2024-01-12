@@ -6,8 +6,12 @@ h3 {
 }
 
 body {
+  box-sizing: border-box;
   border: #fff solid 1rem;
   color: #fff;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 }
 
 main {
@@ -16,6 +20,8 @@ main {
   align-items: center;
   background-color: #3f99d5;
   padding-top: 1rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 h1 {
@@ -28,9 +34,9 @@ h1 {
   display: flex;
   align-self: end;
   flex-direction: row-reverse;
+  height: 100%;
 }
 .left-side {
-  border: 2px dashed red;
   min-width: 610px;
   display: flex;
   flex-direction: column;
@@ -61,21 +67,17 @@ h1 {
     margin-bottom: 30px;
   }
 }
-.right-side {
-  background: blue;
-  min-width: 500px;
-  height: 500px;
-}
 
 .application-form {
+  border-radius: 5px;
   box-sizing: border-box;
-  border: 2px dashed red;
+  background: #9ac0e5;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 470px;
   gap: 10px;
-  padding: 3px 13px;
+  padding: 8px 13px 15px 13px;
 
   span {
     font-size: 1.8rem;
@@ -83,5 +85,96 @@ h1 {
 
   input {
     width: 100%;
+    height: 35px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: #fff 2px solid;
+    color: #014282;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
   }
+
+  select {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: #fff 2px solid;
+    color: #014282;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  input::placeholder {
+    color: #014282;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 55px;
+    background: #014282;
+    border-color: #014282;
+    outline: 0;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+}
+
+.right-side {
+  box-sizing: border-box;
+  min-width: calc(100vw - 640px);
+  padding: 26px 70px;
+}
+
+.promo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 100%;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+footer {
+  background: #029547;
+  height: 100px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.footer-content-container {
+  display: flex;
+  padding: 0 65px;
+}
+.footer-logo {
+  background: pink;
+  min-width: 100px;
+}
+.footer-contants {
+  background: lightcoral;
+  min-width: 100px;
+}
+.footer-address {
+  background: lightskyblue;
+  min-width: 100px;
+}
+.footer-heading {
+  background-color: aquamarine;
+  min-width: 100px;
 }

@@ -35,29 +35,45 @@
               placeholder="שם:"
             />
 
-            <label for="phone">טלפון:</label>
             <input
               type="tel"
               id="phone"
               name="phone"
               required
-              autocomplete="off"
+              autocomplete="tel"
+              placeholder="מספר טלפון"
+              dir="rtl"
             />
 
-            <label for="selection">בחר:</label>
             <select id="selection" name="selection" required autocomplete="off">
-              <option value="option1">אופציה 1</option>
-              <option value="option2">אופציה 2</option>
-              <option value="option3">אופציה 3</option>
+              <option value="" disabled selected>בחירת מרכז</option>
+              <option value="option1">option 1</option>
+              <option value="option2">option 2</option>
+              <option value="option3">option 3</option>
             </select>
 
-            <button type="submit">שלח</button>
+            <button type="submit">שליחה</button>
           </form>
         </div>
-        <div class="right-side"></div>
+        <div class="right-side">
+          <div class="promo-text">
+            <p>החלה ההרשמה לבית הספר המקצועי לטניס</p>
+            <p>אימוני טניס לילדים בכל הרמות, בהדרכת המאמנים</p>
+            <p>הטובים בישראל. לגילאי 18-4</p>
+          </div>
+        </div>
       </div>
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+      <div class="footer-content-container">
+        <div class="footer-logo">logo</div>
+        <div class="footer-contants">contacts</div>
+        <div class="footer-address">address</div>
+        <div class="footer-heading">heading</div>
+      </div>
+    </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>
